@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MainActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/usuario_input"
+        android:layout_centerHorizontal="true"
+        android:src="@android:drawable/ic_menu_mapmode" />
+
+    <EditText
+        android:id="@+id/usuario_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:hint="Ingrese usuario"/>
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="ingrese su clave"
+        android:inputType="textPassword"
+        android:layout_below="@id/usuario_input"/>
+
+    <Button
+        android:id="@+id/ingresar_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ingresar"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_below="@id/password_input"/>
+
+    <Button
+        android:id="@+id/registrar_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:layout_marginStart="60dp"
+        android:layout_marginEnd="60dp"
+        android:layout_below="@id/ingresar_btn"/>
+
+
+</RelativeLayout>
